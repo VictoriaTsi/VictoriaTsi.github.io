@@ -1,0 +1,1247 @@
+/* line 1, ../../../Users/vikatsiunel/Desktop/WebDev/Uber/src/sass/style.sass */
+* {
+  font-family: 'Roboto', sans-serif;
+}
+
+/* line 1, ../../../Users/vikatsiunel/Desktop/WebDev/Uber/src/sass/_general.sass */
+.container {
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+/* line 4, ../../../Users/vikatsiunel/Desktop/WebDev/Uber/src/sass/_general.sass */
+header {
+  position: relative;
+  height: 50px;
+}
+
+/* line 7, ../../../Users/vikatsiunel/Desktop/WebDev/Uber/src/sass/_general.sass */
+nav {
+  position: fixed;
+  width: 100%;
+  height: 50px;
+  background-color: #212121;
+  z-index: 2;
+}
+
+/* line 13, ../../../Users/vikatsiunel/Desktop/WebDev/Uber/src/sass/_general.sass */
+.menu {
+  display: flex;
+  justify-content: space-between;
+  padding: 13px 70px;
+  margin: 0;
+  list-style-type: none;
+}
+
+/* line 19, ../../../Users/vikatsiunel/Desktop/WebDev/Uber/src/sass/_general.sass */
+.menu_link {
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 300;
+  text-decoration: none;
+}
+
+/* line 24, ../../../Users/vikatsiunel/Desktop/WebDev/Uber/src/sass/_general.sass */
+.menu_item {
+  border-right: 2px dotted black;
+  padding-right: 28px;
+}
+
+/* line 27, ../../../Users/vikatsiunel/Desktop/WebDev/Uber/src/sass/_general.sass */
+.menu_item:last-child {
+  border-right: none;
+}
+
+/* line 30, ../../../Users/vikatsiunel/Desktop/WebDev/Uber/src/sass/_general.sass */
+.subheader {
+  position: absolute;
+  top: 50px;
+  width: 100%;
+  height: 84px;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+/* line 36, ../../../Users/vikatsiunel/Desktop/WebDev/Uber/src/sass/_general.sass */
+.subheader_logo {
+  display: block;
+  max-width: 100%;
+  margin-top: 16px;
+}
+
+/* line 40, ../../../Users/vikatsiunel/Desktop/WebDev/Uber/src/sass/_general.sass */
+.subheader_official {
+  margin-top: 6px;
+  opacity: 0.5;
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: 400;
+}
+
+/* line 46, ../../../Users/vikatsiunel/Desktop/WebDev/Uber/src/sass/_general.sass */
+.subheader_call {
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: 300;
+  margin-top: 19px;
+  text-align: right;
+}
+
+/* line 52, ../../../Users/vikatsiunel/Desktop/WebDev/Uber/src/sass/_general.sass */
+.subheader_phone {
+  display: block;
+  color: #ffffff;
+  font-size: 22px;
+  font-weight: 400;
+  text-align: right;
+  text-decoration: none;
+}
+
+/* line 59, ../../../Users/vikatsiunel/Desktop/WebDev/Uber/src/sass/_general.sass */
+.subheader_btn {
+  margin-top: 16px;
+  width: 178px;
+  height: 52px;
+  background-image: linear-gradient(0deg, #1eacc7 0%, #4ce2ff 100%);
+  border: none;
+  box-shadow: inset 0px -3px 0px 0px rgba(0, 0, 0, 0.11);
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.2);
+  color: #ffffff;
+}
+
+/* line 72, ../../../Users/vikatsiunel/Desktop/WebDev/Uber/src/sass/_general.sass */
+.subheader_btn:hover {
+  background-image: none;
+  background-color: #1ca8c3;
+}
+
+/* line 75, ../../../Users/vikatsiunel/Desktop/WebDev/Uber/src/sass/_general.sass */
+.hamburger {
+  display: none;
+}
+
+/* line 78, ../../../Users/vikatsiunel/Desktop/WebDev/Uber/src/sass/_general.sass */
+.promo {
+  min-height: 800px;
+  background: url("../img/main_bg.png") center center/cover no-repeat;
+  padding: 130px 0 132px 0;
+}
+
+/* line 82, ../../../Users/vikatsiunel/Desktop/WebDev/Uber/src/sass/_general.sass */
+.promo_header {
+  color: #ffffff;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 60px;
+  margin: 0;
+  text-align: center;
+}
+
+/* line 89, ../../../Users/vikatsiunel/Desktop/WebDev/Uber/src/sass/_general.sass */
+.promo_subheader {
+  color: #ffffff;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 36px;
+  margin: 0;
+  text-align: center;
+}
+
+/* line 96, ../../../Users/vikatsiunel/Desktop/WebDev/Uber/src/sass/_general.sass */
+.promo_text {
+  font-size: 18px;
+  font-weight: 400;
+  color: #ffffff;
+  margin-top: 23px;
+  text-align: center;
+}
+
+/* line 102, ../../../Users/vikatsiunel/Desktop/WebDev/Uber/src/sass/_general.sass */
+.promo_btn {
+  display: block;
+  margin: 90px auto 0 auto;
+  width: 265px;
+  height: 69px;
+  background-image: linear-gradient(0deg, #1eacc7 0%, #4ce2ff 100%);
+  border: none;
+  border-radius: 4px;
+  font-size: 18px;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.2);
+  color: #ffffff;
+}
+
+/* line 115, ../../../Users/vikatsiunel/Desktop/WebDev/Uber/src/sass/_general.sass */
+.promo_btn:hover {
+  background-image: none;
+  background-color: #1ca8c3;
+}
+
+/* line 117, ../../../Users/vikatsiunel/Desktop/WebDev/Uber/src/sass/_general.sass */
+.reasons {
+  padding: 71px 0 65px 0;
+}
+
+/* line 119, ../../../Users/vikatsiunel/Desktop/WebDev/Uber/src/sass/_general.sass */
+.reasons_block {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  margin-top: 35px;
+}
+
+/* line 124, ../../../Users/vikatsiunel/Desktop/WebDev/Uber/src/sass/_general.sass */
+.reasons_block .reason_descr {
+  width: 343px;
+  margin-left: 26px;
+}
+
+/* line 127, ../../../Users/vikatsiunel/Desktop/WebDev/Uber/src/sass/_general.sass */
+.reasons_block .reason_descr .reasons_subheader {
+  color: #1eacc7;
+  font-size: 17px;
+  font-weight: 400;
+}
+
+/* line 131, ../../../Users/vikatsiunel/Desktop/WebDev/Uber/src/sass/_general.sass */
+.reasons_block .reason_descr .reasons_text {
+  color: #202020;
+  font-size: 15px;
+  font-weight: 300;
+  text-align: justify;
+}
+
+/* line 136, ../../../Users/vikatsiunel/Desktop/WebDev/Uber/src/sass/_general.sass */
+.label {
+  margin: 0 auto;
+  height: 24px;
+  width: 112px;
+  padding: 5px 12px;
+  background-color: #000000;
+  color: #ffffff;
+  font-size: 11px;
+  font-weight: 300;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+/* line 147, ../../../Users/vikatsiunel/Desktop/WebDev/Uber/src/sass/_general.sass */
+.title {
+  margin-bottom: 0;
+  margin-top: 30px;
+  color: #222222;
+  font-size: 38px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+/* line 155, ../../../Users/vikatsiunel/Desktop/WebDev/Uber/src/sass/_general.sass */
+.subtitle {
+  color: #222222;
+  font-size: 17px;
+  font-weight: 400;
+  text-align: center;
+}
+
+/* line 160, ../../../Users/vikatsiunel/Desktop/WebDev/Uber/src/sass/_general.sass */
+.mobile {
+  background: url("../img/bg_cells.png") center center/cover no-repeat;
+  min-height: 864px;
+  padding: 48px 0 60px 0;
+}
+
+/* line 164, ../../../Users/vikatsiunel/Desktop/WebDev/Uber/src/sass/_general.sass */
+.mobile .row {
+  margin-top: 32px;
+}
+
+/* line 166, ../../../Users/vikatsiunel/Desktop/WebDev/Uber/src/sass/_general.sass */
+.mobile_item {
+  position: relative;
+  width: 320px;
+  height: 280px;
+  margin-bottom: 19px;
+  padding-top: 60px;
+}
+
+/* line 172, ../../../Users/vikatsiunel/Desktop/WebDev/Uber/src/sass/_general.sass */
+.mobile_item_1 {
+  background: url("../img/mobile/app1.png") center center/cover no-repeat;
+}
+
+/* line 174, ../../../Users/vikatsiunel/Desktop/WebDev/Uber/src/sass/_general.sass */
+.mobile_item_2 {
+  background: url("../img/mobile/app2.png") center center/cover no-repeat;
+}
+
+/* line 176, ../../../Users/vikatsiunel/Desktop/WebDev/Uber/src/sass/_general.sass */
+.mobile_item_3 {
+  background: url("../img/mobile/app3.png") center center/cover no-repeat;
+}
+
+/* line 178, ../../../Users/vikatsiunel/Desktop/WebDev/Uber/src/sass/_general.sass */
+.mobile_item_4 {
+  background: url("../img/mobile/app4.png") center center/cover no-repeat;
+}
+
+/* line 180, ../../../Users/vikatsiunel/Desktop/WebDev/Uber/src/sass/_general.sass */
+.mobile_item_5 {
+  background: url("../img/mobile/app5.png") center center/cover no-repeat;
+}
+
+/* line 182, ../../../Users/vikatsiunel/Desktop/WebDev/Uber/src/sass/_general.sass */
+.mobile_item_6 {
+  background: url("../img/mobile/app6.png") center center/cover no-repeat;
+}
+
+/* line 184, ../../../Users/vikatsiunel/Desktop/WebDev/Uber/src/sass/_general.sass */
+.mobile_item_subtitle {
+  font-size: 24px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #ffffff;
+  text-align: center;
+}
+
+/* line 190, ../../../Users/vikatsiunel/Desktop/WebDev/Uber/src/sass/_general.sass */
+.mobile_item_plus {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 35px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 26px;
+  height: 26px;
+  background-color: #000000;
+  border-radius: 100%;
+  cursor: pointer;
+}
+
+/* line 203, ../../../Users/vikatsiunel/Desktop/WebDev/Uber/src/sass/_general.sass */
+.mobile_item_plus::before {
+  content: '';
+  display: block;
+  width: 14px;
+  height: 2px;
+  background-color: #1eacc7;
+}
+
+/* line 209, ../../../Users/vikatsiunel/Desktop/WebDev/Uber/src/sass/_general.sass */
+.mobile_item_plus::after {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 2px;
+  height: 14px;
+  background-color: #1eacc7;
+}
+
+/* line 219, ../../../Users/vikatsiunel/Desktop/WebDev/Uber/src/sass/_general.sass */
+.mobile_item_plus:hover::before, .mobile_item_plus:hover::after {
+  background-color: #ff5656;
+}
+
+/* line 223, ../../../Users/vikatsiunel/Desktop/WebDev/Uber/src/sass/_general.sass */
+.choice .black {
+  min-height: 499px;
+  padding-top: 50px;
+  background-color: #070716;
+  position: relative;
+}
+
+/* line 228, ../../../Users/vikatsiunel/Desktop/WebDev/Uber/src/sass/_general.sass */
+.choice .black .label {
+  background-color: #ffffff;
+  color: #070716;
+}
+
+/* line 231, ../../../Users/vikatsiunel/Desktop/WebDev/Uber/src/sass/_general.sass */
+.choice .black .title {
+  color: #ffffff;
+}
+
+/* line 233, ../../../Users/vikatsiunel/Desktop/WebDev/Uber/src/sass/_general.sass */
+.choice .black .subtitle {
+  color: #ffffff;
+}
+
+/* line 235, ../../../Users/vikatsiunel/Desktop/WebDev/Uber/src/sass/_general.sass */
+.choice .black .car {
+  position: absolute;
+  top: 232px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* line 240, ../../../Users/vikatsiunel/Desktop/WebDev/Uber/src/sass/_general.sass */
+.choice .black .xs-visible-car-text {
+  display: none;
+}
+
+/* line 242, ../../../Users/vikatsiunel/Desktop/WebDev/Uber/src/sass/_general.sass */
+.choice .white {
+  min-height: 330px;
+  background: url("../img/bg_cells.png") center center/cover no-repeat;
+  padding-top: 217px;
+}
+
+/* line 246, ../../../Users/vikatsiunel/Desktop/WebDev/Uber/src/sass/_general.sass */
+.choice .white .car_text {
+  font-size: 17px;
+  font-weight: 300;
+  color: #222222;
+  text-align: center;
+}
+
+/* line 252, ../../../Users/vikatsiunel/Desktop/WebDev/Uber/src/sass/_general.sass */
+.conditions {
+  background-color: #fff;
+  padding: 50px 0;
+}
+
+/* line 255, ../../../Users/vikatsiunel/Desktop/WebDev/Uber/src/sass/_general.sass */
+.conditions_block {
+  width: 500px;
+  margin: 30px 0;
+}
+
+/* line 258, ../../../Users/vikatsiunel/Desktop/WebDev/Uber/src/sass/_general.sass */
+.conditions_title {
+  font-size: 22px;
+  font-weight: 400;
+  color: #1ca8c3;
+}
+
+/* line 262, ../../../Users/vikatsiunel/Desktop/WebDev/Uber/src/sass/_general.sass */
+.conditions_list {
+  list-style-type: none;
+  padding-left: 30px;
+  margin-top: 10px;
+  font-size: 17px;
+  font-weight: 300;
+  color: #222222;
+}
+
+/* line 269, ../../../Users/vikatsiunel/Desktop/WebDev/Uber/src/sass/_general.sass */
+.conditions_list li {
+  margin-bottom: 5px;
+}
+
+/* line 272, ../../../Users/vikatsiunel/Desktop/WebDev/Uber/src/sass/_general.sass */
+.conditions_list li::before {
+  content: '';
+  display: inline-block;
+  vertical-align: middle;
+  transform: translateX(-10px);
+  width: 21px;
+  height: 20px;
+  background: url("../icons/check_marks/blue_mark.png") center center/cover no-repeat;
+}
+
+/* line 283, ../../../Users/vikatsiunel/Desktop/WebDev/Uber/src/sass/_general.sass */
+.conditions_descr {
+  font-size: 17px;
+  font-weight: 300;
+  color: #1ca8c3;
+}
+
+/* line 288, ../../../Users/vikatsiunel/Desktop/WebDev/Uber/src/sass/_general.sass */
+.conditions .requires .conditions_title {
+  color: #ff5656;
+}
+
+/* line 292, ../../../Users/vikatsiunel/Desktop/WebDev/Uber/src/sass/_general.sass */
+.conditions .requires .conditions_list li::before {
+  background: url("../icons/check_marks/red_mark.png") center center/cover no-repeat;
+}
+
+/* line 295, ../../../Users/vikatsiunel/Desktop/WebDev/Uber/src/sass/_general.sass */
+.world {
+  min-height: 717px;
+  background: url("../img/world_map.png") center center no-repeat;
+  background-color: #070716;
+  padding: 49px 0;
+  position: relative;
+}
+
+/* line 302, ../../../Users/vikatsiunel/Desktop/WebDev/Uber/src/sass/_general.sass */
+.world .world_label {
+  width: 76px;
+  height: 24px;
+  background-color: #ffffff;
+  text-align: center;
+  margin: 0 auto;
+}
+
+/* line 308, ../../../Users/vikatsiunel/Desktop/WebDev/Uber/src/sass/_general.sass */
+.world .title, .world .subtitle {
+  color: #fff;
+}
+
+/* line 310, ../../../Users/vikatsiunel/Desktop/WebDev/Uber/src/sass/_general.sass */
+.world .cities {
+  position: absolute;
+  bottom: 49px;
+  right: 50%;
+  transform: translateX(50%);
+  font-size: 15px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #1fbad6;
+  text-decoration: none;
+}
+
+/* line 320, ../../../Users/vikatsiunel/Desktop/WebDev/Uber/src/sass/_general.sass */
+footer {
+  min-height: 156px;
+  padding-top: 14px;
+  position: relative;
+}
+
+/* line 324, ../../../Users/vikatsiunel/Desktop/WebDev/Uber/src/sass/_general.sass */
+footer .divider {
+  width: 299px;
+  height: 4px;
+  background-color: #1fbad6;
+  margin: 0 auto;
+}
+
+/* line 330, ../../../Users/vikatsiunel/Desktop/WebDev/Uber/src/sass/_general.sass */
+footer .footer_links {
+  width: 330px;
+  margin: 0 auto;
+  margin-top: 32px;
+  text-align: center;
+}
+
+/* line 335, ../../../Users/vikatsiunel/Desktop/WebDev/Uber/src/sass/_general.sass */
+footer .footer_links a {
+  text-decoration: none;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+/* line 339, ../../../Users/vikatsiunel/Desktop/WebDev/Uber/src/sass/_general.sass */
+footer .footer_links_main {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* line 342, ../../../Users/vikatsiunel/Desktop/WebDev/Uber/src/sass/_general.sass */
+footer .footer_links_main a {
+  font-size: 15px;
+  color: #070716;
+}
+
+/* line 346, ../../../Users/vikatsiunel/Desktop/WebDev/Uber/src/sass/_general.sass */
+footer .footer_links_sub {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 6px;
+}
+
+/* line 350, ../../../Users/vikatsiunel/Desktop/WebDev/Uber/src/sass/_general.sass */
+footer .footer_links_sub a {
+  font-size: 11px;
+  color: #999999;
+}
+
+/* line 353, ../../../Users/vikatsiunel/Desktop/WebDev/Uber/src/sass/_general.sass */
+footer .footer_links_lang {
+  margin-top: 19px;
+  padding-bottom: 39px;
+}
+
+/* line 357, ../../../Users/vikatsiunel/Desktop/WebDev/Uber/src/sass/_general.sass */
+footer .footer_links_lang a {
+  font-size: 11px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #1fbad6;
+}
+
+/* line 363, ../../../Users/vikatsiunel/Desktop/WebDev/Uber/src/sass/_general.sass */
+footer .footer_app {
+  position: absolute;
+  right: 23px;
+  top: 52px;
+}
+
+/* line 368, ../../../Users/vikatsiunel/Desktop/WebDev/Uber/src/sass/_general.sass */
+footer .footer_icons {
+  position: absolute;
+  left: 23px;
+  top: 52px;
+  width: 155px;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* line 375, ../../../Users/vikatsiunel/Desktop/WebDev/Uber/src/sass/_general.sass */
+footer .footer_icons_circle {
+  width: 32px;
+  height: 32px;
+  background-color: #070716;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* line 383, ../../../Users/vikatsiunel/Desktop/WebDev/Uber/src/sass/_general.sass */
+footer .footer_icons_circle i {
+  color: #fff;
+}
+
+/* line 385, ../../../Users/vikatsiunel/Desktop/WebDev/Uber/src/sass/_general.sass */
+footer .bottom {
+  width: 100%;
+  height: 8px;
+  background-color: #070716;
+  position: absolute;
+  bottom: 0;
+}
+
+/* line 392, ../../../Users/vikatsiunel/Desktop/WebDev/Uber/src/sass/_general.sass */
+.xs-visible {
+  display: none;
+}
+
+@media (min-width: 1200px) and (max-width: 1400px) {
+  /* line 3, ../../../Users/vikatsiunel/Desktop/WebDev/Uber/src/sass/_media.sass */
+  .menu_item {
+    padding-right: 22px;
+  }
+  /* line 5, ../../../Users/vikatsiunel/Desktop/WebDev/Uber/src/sass/_media.sass */
+  .menu_link {
+    font-size: 13px;
+  }
+  /* line 8, ../../../Users/vikatsiunel/Desktop/WebDev/Uber/src/sass/_media.sass */
+  .promo_header {
+    font-size: 56px;
+  }
+  /* line 10, ../../../Users/vikatsiunel/Desktop/WebDev/Uber/src/sass/_media.sass */
+  .promo_subheader {
+    margin-top: 8px;
+    font-size: 35px;
+  }
+}
+
+@media (max-width: 1200px) {
+  /* line 15, ../../../Users/vikatsiunel/Desktop/WebDev/Uber/src/sass/_media.sass */
+  .menu_item {
+    padding-right: 11px;
+  }
+  /* line 17, ../../../Users/vikatsiunel/Desktop/WebDev/Uber/src/sass/_media.sass */
+  .menu_link {
+    font-size: 11px;
+  }
+  /* line 20, ../../../Users/vikatsiunel/Desktop/WebDev/Uber/src/sass/_media.sass */
+  .promo_header {
+    font-size: 45px;
+  }
+  /* line 22, ../../../Users/vikatsiunel/Desktop/WebDev/Uber/src/sass/_media.sass */
+  .promo_subheader {
+    margin-top: 8px;
+    font-size: 32px;
+  }
+  /* line 26, ../../../Users/vikatsiunel/Desktop/WebDev/Uber/src/sass/_media.sass */
+  .reasons .title {
+    font-size: 35px;
+  }
+  /* line 30, ../../../Users/vikatsiunel/Desktop/WebDev/Uber/src/sass/_media.sass */
+  .reasons_block .reason_descr .reasons_text {
+    text-align: left;
+  }
+  /* line 32, ../../../Users/vikatsiunel/Desktop/WebDev/Uber/src/sass/_media.sass */
+  .mobile {
+    min-height: 600px;
+    padding-bottom: 40px;
+  }
+  /* line 35, ../../../Users/vikatsiunel/Desktop/WebDev/Uber/src/sass/_media.sass */
+  .mobile_item {
+    width: 250px;
+    height: 200px;
+  }
+  /* line 38, ../../../Users/vikatsiunel/Desktop/WebDev/Uber/src/sass/_media.sass */
+  .mobile_item_subtitle {
+    font-size: 20px;
+  }
+  /* line 41, ../../../Users/vikatsiunel/Desktop/WebDev/Uber/src/sass/_media.sass */
+  .choice .title {
+    font-size: 30px;
+  }
+  /* line 44, ../../../Users/vikatsiunel/Desktop/WebDev/Uber/src/sass/_media.sass */
+  .conditions .title {
+    font-size: 35px;
+  }
+  /* line 46, ../../../Users/vikatsiunel/Desktop/WebDev/Uber/src/sass/_media.sass */
+  .conditions_block {
+    width: 422px;
+  }
+  /* line 48, ../../../Users/vikatsiunel/Desktop/WebDev/Uber/src/sass/_media.sass */
+  .conditions_list {
+    padding-left: 28px;
+  }
+  /* line 51, ../../../Users/vikatsiunel/Desktop/WebDev/Uber/src/sass/_media.sass */
+  .world .title {
+    font-size: 35px;
+  }
+}
+
+@media (max-width: 991px) {
+  /* line 55, ../../../Users/vikatsiunel/Desktop/WebDev/Uber/src/sass/_media.sass */
+  .container {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  /* line 59, ../../../Users/vikatsiunel/Desktop/WebDev/Uber/src/sass/_media.sass */
+  .menu_item {
+    padding-right: 9px;
+  }
+  /* line 61, ../../../Users/vikatsiunel/Desktop/WebDev/Uber/src/sass/_media.sass */
+  .menu_link {
+    font-size: 11px;
+  }
+  /* line 65, ../../../Users/vikatsiunel/Desktop/WebDev/Uber/src/sass/_media.sass */
+  .subheader_logo img {
+    width: 100%;
+  }
+  /* line 67, ../../../Users/vikatsiunel/Desktop/WebDev/Uber/src/sass/_media.sass */
+  .subheader_official {
+    font-size: 12px;
+  }
+  /* line 69, ../../../Users/vikatsiunel/Desktop/WebDev/Uber/src/sass/_media.sass */
+  .subheader_btn {
+    width: 100%;
+    height: 48px;
+    margin-top: 20px;
+  }
+  /* line 74, ../../../Users/vikatsiunel/Desktop/WebDev/Uber/src/sass/_media.sass */
+  .promo_header {
+    font-size: 49px;
+  }
+  /* line 76, ../../../Users/vikatsiunel/Desktop/WebDev/Uber/src/sass/_media.sass */
+  .promo_subheader {
+    margin-top: 18px;
+    font-size: 28px;
+  }
+  /* line 79, ../../../Users/vikatsiunel/Desktop/WebDev/Uber/src/sass/_media.sass */
+  .promo .title {
+    font-size: 32px;
+  }
+  /* line 82, ../../../Users/vikatsiunel/Desktop/WebDev/Uber/src/sass/_media.sass */
+  .reasons_block {
+    flex-direction: column;
+    align-items: center;
+  }
+  /* line 85, ../../../Users/vikatsiunel/Desktop/WebDev/Uber/src/sass/_media.sass */
+  .reasons_block .reason_descr {
+    margin-top: 10px;
+  }
+  /* line 87, ../../../Users/vikatsiunel/Desktop/WebDev/Uber/src/sass/_media.sass */
+  .reasons .title {
+    font-size: 32px;
+  }
+  /* line 90, ../../../Users/vikatsiunel/Desktop/WebDev/Uber/src/sass/_media.sass */
+  .mobile_item {
+    width: 240px;
+    height: 210px;
+  }
+  /* line 93, ../../../Users/vikatsiunel/Desktop/WebDev/Uber/src/sass/_media.sass */
+  .mobile_item_subtitle {
+    font-size: 19px;
+  }
+  /* line 95, ../../../Users/vikatsiunel/Desktop/WebDev/Uber/src/sass/_media.sass */
+  .mobile .title {
+    font-size: 32px;
+  }
+  /* line 97, ../../../Users/vikatsiunel/Desktop/WebDev/Uber/src/sass/_media.sass */
+  .choice {
+    min-height: 800px;
+  }
+  /* line 100, ../../../Users/vikatsiunel/Desktop/WebDev/Uber/src/sass/_media.sass */
+  .choice .black .car {
+    width: 100%;
+  }
+  /* line 102, ../../../Users/vikatsiunel/Desktop/WebDev/Uber/src/sass/_media.sass */
+  .choice .title {
+    font-size: 32px;
+  }
+  /* line 105, ../../../Users/vikatsiunel/Desktop/WebDev/Uber/src/sass/_media.sass */
+  .conditions .title {
+    font-size: 32px;
+  }
+  /* line 107, ../../../Users/vikatsiunel/Desktop/WebDev/Uber/src/sass/_media.sass */
+  .conditions_block {
+    width: 380px;
+  }
+  /* line 109, ../../../Users/vikatsiunel/Desktop/WebDev/Uber/src/sass/_media.sass */
+  .conditions_list {
+    padding-left: 24px;
+  }
+  /* line 111, ../../../Users/vikatsiunel/Desktop/WebDev/Uber/src/sass/_media.sass */
+  .world {
+    min-height: 650px;
+  }
+  /* line 113, ../../../Users/vikatsiunel/Desktop/WebDev/Uber/src/sass/_media.sass */
+  .world .title {
+    font-size: 30px;
+  }
+  /* line 115, ../../../Users/vikatsiunel/Desktop/WebDev/Uber/src/sass/_media.sass */
+  footer {
+    min-height: 250px;
+  }
+  /* line 117, ../../../Users/vikatsiunel/Desktop/WebDev/Uber/src/sass/_media.sass */
+  footer .footer_icons {
+    top: 140px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  /* line 121, ../../../Users/vikatsiunel/Desktop/WebDev/Uber/src/sass/_media.sass */
+  footer .footer_app {
+    top: 194px;
+    left: 50%;
+    transform: translateX(-50%);
+    max-width: 296px;
+  }
+  /* line 126, ../../../Users/vikatsiunel/Desktop/WebDev/Uber/src/sass/_media.sass */
+  footer .footer_app img {
+    width: 100%;
+  }
+  /* line 128, ../../../Users/vikatsiunel/Desktop/WebDev/Uber/src/sass/_media.sass */
+  footer .footer_links {
+    margin-top: 23px;
+  }
+  /* line 130, ../../../Users/vikatsiunel/Desktop/WebDev/Uber/src/sass/_media.sass */
+  footer .footer_links_lang {
+    margin-top: 12px;
+  }
+}
+
+@media (max-width: 768px) {
+  /* line 134, ../../../Users/vikatsiunel/Desktop/WebDev/Uber/src/sass/_media.sass */
+  .container {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  /* line 137, ../../../Users/vikatsiunel/Desktop/WebDev/Uber/src/sass/_media.sass */
+  .menu {
+    position: fixed;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: -100%;
+    width: 50%;
+    height: 100vh;
+    padding: 20px 15px;
+    background-color: rgba(0, 0, 0, 0.8);
+    transition: 0.6s all;
+  }
+  /* line 149, ../../../Users/vikatsiunel/Desktop/WebDev/Uber/src/sass/_media.sass */
+  .menu_active {
+    left: 0;
+  }
+  /* line 151, ../../../Users/vikatsiunel/Desktop/WebDev/Uber/src/sass/_media.sass */
+  .menu_item {
+    padding-right: 0;
+    border: none;
+    margin-top: 12px;
+  }
+  /* line 155, ../../../Users/vikatsiunel/Desktop/WebDev/Uber/src/sass/_media.sass */
+  .menu_link {
+    font-size: 17px;
+  }
+  /* line 157, ../../../Users/vikatsiunel/Desktop/WebDev/Uber/src/sass/_media.sass */
+  .hamburger {
+    display: block;
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 26px;
+    height: 12px;
+  }
+  /* line 165, ../../../Users/vikatsiunel/Desktop/WebDev/Uber/src/sass/_media.sass */
+  .hamburger span {
+    display: block;
+    height: 2px;
+    width: 100%;
+    background-color: #fff;
+    margin-bottom: 2px;
+    transition: 0.5s all;
+  }
+  /* line 173, ../../../Users/vikatsiunel/Desktop/WebDev/Uber/src/sass/_media.sass */
+  .hamburger_active span {
+    margin-bottom: -2px;
+  }
+  /* line 175, ../../../Users/vikatsiunel/Desktop/WebDev/Uber/src/sass/_media.sass */
+  .hamburger_active span:nth-child(1) {
+    transform: translateY(3px) rotate(-45deg);
+  }
+  /* line 177, ../../../Users/vikatsiunel/Desktop/WebDev/Uber/src/sass/_media.sass */
+  .hamburger_active span:nth-child(2) {
+    display: none;
+  }
+  /* line 179, ../../../Users/vikatsiunel/Desktop/WebDev/Uber/src/sass/_media.sass */
+  .hamburger_active span:nth-child(3) {
+    transform: translateY(3px) rotate(45deg);
+  }
+  /* line 181, ../../../Users/vikatsiunel/Desktop/WebDev/Uber/src/sass/_media.sass */
+  .xs-hidden {
+    display: none;
+  }
+  /* line 183, ../../../Users/vikatsiunel/Desktop/WebDev/Uber/src/sass/_media.sass */
+  .xs-visible {
+    display: block;
+  }
+  /* line 186, ../../../Users/vikatsiunel/Desktop/WebDev/Uber/src/sass/_media.sass */
+  .subheader_phone {
+    display: block;
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #ffffff;
+    text-align: center;
+    margin-top: 10px;
+  }
+  /* line 194, ../../../Users/vikatsiunel/Desktop/WebDev/Uber/src/sass/_media.sass */
+  .subheader_btn {
+    display: block;
+    width: 200px;
+    height: 40px;
+    background-image: linear-gradient(0deg, #1eacc7 0%, #4ce2ff 100%);
+    border: none;
+    box-shadow: inset 0px -3px 0px 0px rgba(0, 0, 0, 0.11);
+    font-size: 14px;
+    margin: 0 auto;
+    margin-top: 6px;
+  }
+  /* line 205, ../../../Users/vikatsiunel/Desktop/WebDev/Uber/src/sass/_media.sass */
+  .promo_header {
+    font-size: 40px;
+  }
+  /* line 207, ../../../Users/vikatsiunel/Desktop/WebDev/Uber/src/sass/_media.sass */
+  .promo_subheader {
+    font-size: 26px;
+  }
+  /* line 209, ../../../Users/vikatsiunel/Desktop/WebDev/Uber/src/sass/_media.sass */
+  .title {
+    font-size: 30px;
+  }
+  /* line 212, ../../../Users/vikatsiunel/Desktop/WebDev/Uber/src/sass/_media.sass */
+  .mobile .title {
+    font-size: 30px;
+  }
+  /* line 215, ../../../Users/vikatsiunel/Desktop/WebDev/Uber/src/sass/_media.sass */
+  .mobile_item_subtitle {
+    font-size: 18px;
+  }
+  /* line 217, ../../../Users/vikatsiunel/Desktop/WebDev/Uber/src/sass/_media.sass */
+  .choice {
+    padding-top: 40px;
+    min-height: 600px;
+  }
+  /* line 218, ../../../Users/vikatsiunel/Desktop/WebDev/Uber/src/sass/_media.sass */
+  .choice .title {
+    font-size: 30px;
+  }
+  /* line 224, ../../../Users/vikatsiunel/Desktop/WebDev/Uber/src/sass/_media.sass */
+  .conditions {
+    padding: 20px 0;
+  }
+  /* line 226, ../../../Users/vikatsiunel/Desktop/WebDev/Uber/src/sass/_media.sass */
+  .conditions .title {
+    font-size: 25px;
+  }
+  /* line 228, ../../../Users/vikatsiunel/Desktop/WebDev/Uber/src/sass/_media.sass */
+  .conditions_block {
+    width: 440px;
+    margin: 20px 0 0 40px;
+  }
+  /* line 231, ../../../Users/vikatsiunel/Desktop/WebDev/Uber/src/sass/_media.sass */
+  .conditions_list {
+    margin-bottom: 0;
+  }
+  /* line 233, ../../../Users/vikatsiunel/Desktop/WebDev/Uber/src/sass/_media.sass */
+  .world {
+    min-height: 450px;
+  }
+  /* line 235, ../../../Users/vikatsiunel/Desktop/WebDev/Uber/src/sass/_media.sass */
+  .world .title {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 576px) {
+  /* line 239, ../../../Users/vikatsiunel/Desktop/WebDev/Uber/src/sass/_media.sass */
+  nav {
+    height: 30px;
+  }
+  /* line 241, ../../../Users/vikatsiunel/Desktop/WebDev/Uber/src/sass/_media.sass */
+  header {
+    height: 30px;
+  }
+  /* line 243, ../../../Users/vikatsiunel/Desktop/WebDev/Uber/src/sass/_media.sass */
+  .subheader {
+    top: 30px;
+  }
+  /* line 245, ../../../Users/vikatsiunel/Desktop/WebDev/Uber/src/sass/_media.sass */
+  .subheader_official {
+    display: none;
+  }
+  /* line 247, ../../../Users/vikatsiunel/Desktop/WebDev/Uber/src/sass/_media.sass */
+  .subheader_logo {
+    margin-top: 26px;
+    margin-left: 10px;
+  }
+  /* line 251, ../../../Users/vikatsiunel/Desktop/WebDev/Uber/src/sass/_media.sass */
+  .subheader_phone {
+    font-size: 12px;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-top: 13px;
+  }
+  /* line 256, ../../../Users/vikatsiunel/Desktop/WebDev/Uber/src/sass/_media.sass */
+  .subheader_btn {
+    width: 116px;
+    height: 28px;
+    font-size: 10px;
+  }
+  /* line 260, ../../../Users/vikatsiunel/Desktop/WebDev/Uber/src/sass/_media.sass */
+  .menu {
+    width: 75%;
+  }
+  /* line 262, ../../../Users/vikatsiunel/Desktop/WebDev/Uber/src/sass/_media.sass */
+  .menu_item {
+    width: 100%;
+    text-align: center;
+    padding: 5px 0;
+  }
+  /* line 266, ../../../Users/vikatsiunel/Desktop/WebDev/Uber/src/sass/_media.sass */
+  .menu_link {
+    display: block;
+    width: 100%;
+  }
+  /* line 269, ../../../Users/vikatsiunel/Desktop/WebDev/Uber/src/sass/_media.sass */
+  .promo {
+    padding: 130px 10px 32px 10px;
+    min-height: 400px;
+  }
+  /* line 272, ../../../Users/vikatsiunel/Desktop/WebDev/Uber/src/sass/_media.sass */
+  .promo_header {
+    font-size: 30px;
+    line-height: 1.2;
+    font-weight: 900;
+  }
+  /* line 276, ../../../Users/vikatsiunel/Desktop/WebDev/Uber/src/sass/_media.sass */
+  .promo_subheader {
+    font-size: 22px;
+    font-weight: 700;
+  }
+  /* line 279, ../../../Users/vikatsiunel/Desktop/WebDev/Uber/src/sass/_media.sass */
+  .promo_text {
+    display: none;
+  }
+  /* line 281, ../../../Users/vikatsiunel/Desktop/WebDev/Uber/src/sass/_media.sass */
+  .promo_btn {
+    margin-top: 69px;
+    width: 216px;
+    height: 56px;
+    font-size: 16px;
+    font-weight: 400;
+  }
+  /* line 287, ../../../Users/vikatsiunel/Desktop/WebDev/Uber/src/sass/_media.sass */
+  .reasons {
+    padding: 22px 0 50px 0;
+  }
+  /* line 289, ../../../Users/vikatsiunel/Desktop/WebDev/Uber/src/sass/_media.sass */
+  .reasons .title {
+    font-size: 16px;
+    margin-top: 15px;
+  }
+  /* line 292, ../../../Users/vikatsiunel/Desktop/WebDev/Uber/src/sass/_media.sass */
+  .reasons .reason_img {
+    width: 100px;
+  }
+  /* line 294, ../../../Users/vikatsiunel/Desktop/WebDev/Uber/src/sass/_media.sass */
+  .reasons_block {
+    margin-top: 25px;
+  }
+  /* line 296, ../../../Users/vikatsiunel/Desktop/WebDev/Uber/src/sass/_media.sass */
+  .reasons_block .reason_descr {
+    width: 95%;
+    margin: 25px 15px 0 15px;
+  }
+  /* line 299, ../../../Users/vikatsiunel/Desktop/WebDev/Uber/src/sass/_media.sass */
+  .reasons_block .reason_descr .reasons_subheader {
+    font-size: 16px;
+  }
+  /* line 301, ../../../Users/vikatsiunel/Desktop/WebDev/Uber/src/sass/_media.sass */
+  .reasons_block .reason_descr .reasons_text {
+    font-size: 14px;
+  }
+  /* line 304, ../../../Users/vikatsiunel/Desktop/WebDev/Uber/src/sass/_media.sass */
+  .mobile .title {
+    font-size: 16px;
+    margin-top: 15px;
+  }
+  /* line 307, ../../../Users/vikatsiunel/Desktop/WebDev/Uber/src/sass/_media.sass */
+  .mobile .subtitle {
+    font-size: 14px;
+    margin-top: 11px;
+  }
+  /* line 310, ../../../Users/vikatsiunel/Desktop/WebDev/Uber/src/sass/_media.sass */
+  .mobile_item {
+    width: 290px;
+    height: 254px;
+    margin: 0 auto;
+    margin-bottom: 15px;
+  }
+  /* line 316, ../../../Users/vikatsiunel/Desktop/WebDev/Uber/src/sass/_media.sass */
+  .mobile_subtitle {
+    font-size: 18px;
+  }
+  /* line 318, ../../../Users/vikatsiunel/Desktop/WebDev/Uber/src/sass/_media.sass */
+  .choice {
+    padding: 0;
+    background-color: #070716;
+    min-height: 370px;
+  }
+  /* line 324, ../../../Users/vikatsiunel/Desktop/WebDev/Uber/src/sass/_media.sass */
+  .choice .white {
+    display: none;
+  }
+  /* line 326, ../../../Users/vikatsiunel/Desktop/WebDev/Uber/src/sass/_media.sass */
+  .choice .black {
+    padding: 0;
+    padding-top: 25px;
+  }
+  /* line 329, ../../../Users/vikatsiunel/Desktop/WebDev/Uber/src/sass/_media.sass */
+  .choice .black .xs-visible-car-text {
+    display: block;
+  }
+  /* line 331, ../../../Users/vikatsiunel/Desktop/WebDev/Uber/src/sass/_media.sass */
+  .choice .black .car {
+    top: 84px;
+  }
+  /* line 333, ../../../Users/vikatsiunel/Desktop/WebDev/Uber/src/sass/_media.sass */
+  .choice .black .title {
+    display: none;
+  }
+  /* line 335, ../../../Users/vikatsiunel/Desktop/WebDev/Uber/src/sass/_media.sass */
+  .choice .black .subtitle {
+    display: none;
+  }
+  /* line 337, ../../../Users/vikatsiunel/Desktop/WebDev/Uber/src/sass/_media.sass */
+  .choice .black .car_text {
+    font-size: 17px;
+    font-weight: 300;
+    color: #ffffff;
+    text-align: center;
+    margin-top: 330px;
+  }
+  /* line 345, ../../../Users/vikatsiunel/Desktop/WebDev/Uber/src/sass/_media.sass */
+  .conditions {
+    padding: 20px 0;
+  }
+  /* line 347, ../../../Users/vikatsiunel/Desktop/WebDev/Uber/src/sass/_media.sass */
+  .conditions .title {
+    font-size: 16px;
+    margin-top: 15px;
+  }
+  /* line 350, ../../../Users/vikatsiunel/Desktop/WebDev/Uber/src/sass/_media.sass */
+  .conditions_block {
+    margin: 0 auto;
+    margin-top: 25px;
+    width: 300px;
+  }
+  /* line 354, ../../../Users/vikatsiunel/Desktop/WebDev/Uber/src/sass/_media.sass */
+  .conditions_title {
+    font-size: 16px;
+  }
+  /* line 356, ../../../Users/vikatsiunel/Desktop/WebDev/Uber/src/sass/_media.sass */
+  .conditions_list {
+    font-size: 14px;
+  }
+  /* line 358, ../../../Users/vikatsiunel/Desktop/WebDev/Uber/src/sass/_media.sass */
+  .conditions_descr {
+    font-size: 14px;
+  }
+  /* line 360, ../../../Users/vikatsiunel/Desktop/WebDev/Uber/src/sass/_media.sass */
+  .world {
+    min-height: 360px;
+    padding-top: 21px;
+  }
+  /* line 363, ../../../Users/vikatsiunel/Desktop/WebDev/Uber/src/sass/_media.sass */
+  .world .title {
+    font-size: 16px;
+    margin-top: 15px;
+  }
+  /* line 366, ../../../Users/vikatsiunel/Desktop/WebDev/Uber/src/sass/_media.sass */
+  .world .subtitle {
+    margin-top: 7px;
+    font-size: 14px;
+  }
+  /* line 369, ../../../Users/vikatsiunel/Desktop/WebDev/Uber/src/sass/_media.sass */
+  .world .cities {
+    width: 194px;
+    bottom: 30px;
+  }
+  /* line 372, ../../../Users/vikatsiunel/Desktop/WebDev/Uber/src/sass/_media.sass */
+  footer {
+    padding-top: 25px;
+    min-height: 270px;
+  }
+  /* line 375, ../../../Users/vikatsiunel/Desktop/WebDev/Uber/src/sass/_media.sass */
+  footer .divider {
+    width: 253px;
+  }
+  /* line 378, ../../../Users/vikatsiunel/Desktop/WebDev/Uber/src/sass/_media.sass */
+  footer .footer_links_main a {
+    font-size: 14px;
+  }
+  /* line 380, ../../../Users/vikatsiunel/Desktop/WebDev/Uber/src/sass/_media.sass */
+  footer .footer_links_main {
+    margin: 0 auto;
+    margin-top: 22px;
+    width: 280px;
+  }
+  /* line 384, ../../../Users/vikatsiunel/Desktop/WebDev/Uber/src/sass/_media.sass */
+  footer .footer_links_sub {
+    width: 240px;
+    margin: 0 auto;
+    margin-top: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  /* line 390, ../../../Users/vikatsiunel/Desktop/WebDev/Uber/src/sass/_media.sass */
+  footer .footer_links_sub a {
+    margin: 0 7px;
+  }
+  /* line 392, ../../../Users/vikatsiunel/Desktop/WebDev/Uber/src/sass/_media.sass */
+  footer .footer_links_lang {
+    margin-top: 13px;
+  }
+  /* line 394, ../../../Users/vikatsiunel/Desktop/WebDev/Uber/src/sass/_media.sass */
+  footer .footer_app {
+    width: 260px;
+    top: 215px;
+  }
+  /* line 397, ../../../Users/vikatsiunel/Desktop/WebDev/Uber/src/sass/_media.sass */
+  footer .footer_icons {
+    top: 165px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
